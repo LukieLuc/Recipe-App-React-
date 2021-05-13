@@ -10,12 +10,13 @@ const App = () => {
 	const [recipes, setRecipes] = useState([]);
 	const [search, setSearch] = useState("");
 	const [query, setQuery] = useState("chicken");
+
 	useEffect(() => {
-   	   document.title = "new title"
+		document.title = "new title";
 	}, []);
 
 	useEffect(() => {
-	    getRecipes();
+		getRecipes();
 	}, [query]);
 
 	const getRecipes = async () => {
@@ -53,6 +54,7 @@ const App = () => {
 				</button>
 			</form>
 			<div className="recipes">
+				<h1>Recipes with {query}</h1>
 				{recipes.map((recipe) => (
 					<Recipe
 						key={recipe.recipe.label}
