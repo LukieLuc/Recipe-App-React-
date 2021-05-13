@@ -42,8 +42,8 @@ const App = () => {
 
 	return (
 		<div className="App">
-			<div className="logo">
-				<img src={logo} />
+			<div className="query">
+				<h1>Showing recipes for: {query}</h1>
 			</div>
 			<form onSubmit={getSearch} className="search-form">
 				<input
