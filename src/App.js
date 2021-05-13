@@ -46,6 +46,7 @@ const App = () => {
 			<div className="logo">
 				<img src={logo} />
 			</div>
+
 			<form onSubmit={getSearch} className="search-form">
 				<input
 					className="search-bar"
