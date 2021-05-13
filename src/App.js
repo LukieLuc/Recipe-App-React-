@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Recipe from "./Recipe";
 import "./App.css";
 import "./index.css";
+import logo from "Java.png";
 
 const App = () => {
 	const APP_ID = "c78cf46f";
@@ -42,6 +43,9 @@ const App = () => {
 
 	return (
 		<div className="App">
+			<div className="logo">
+				<img src={logo} />
+			</div>
 			<form onSubmit={getSearch} className="search-form">
 				<input
 					className="search-bar"
@@ -54,7 +58,6 @@ const App = () => {
 				</button>
 			</form>
 			<div className="recipes">
-				<h1>Recipes with {query}</h1>
 				{recipes.map((recipe) => (
 					<Recipe
 						key={recipe.recipe.label}
