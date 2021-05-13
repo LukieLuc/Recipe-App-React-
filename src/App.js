@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Recipe from "./Recipe";
 import "./App.css";
 import "./index.css";
-import logo from "green-recipe.png";
+import logo from "./green-recipe.png";
 
 const App = () => {
 	const APP_ID = "c78cf46f";
